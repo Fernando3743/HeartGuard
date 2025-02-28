@@ -1,11 +1,42 @@
-header{
-    background-color: #00586F;
-    padding: 1rem;
-}
-
-nav{
+/* Estilos generales del header */
+header {
+    width: 100%;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    padding: 15px 30px;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
-    gap: 1rem;
-}
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Navegación */
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Links de navegación */
+  nav a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  /* Efecto hover */
+  nav a:hover {
+    background: #1976D2;
+    color: white;
+  }
+  
+  /* Página activa */
+  nav a.active {
+    background: #1565C0;
+    color: white;
+  }
